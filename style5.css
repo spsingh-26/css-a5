@@ -1,0 +1,192 @@
+.container{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+}
+
+.animation1{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    margin: 20px;
+    animation: LRSKEW;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: skewY(20deg);
+}
+
+
+@keyframes LRSKEW{
+    0%{
+        transform: skewY(20deg);
+    }
+    50%{
+        transform: skewY(-20deg);
+    }
+    100%{
+        transform: skewY(20deg);
+    }
+}
+
+.animation2{
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    margin: 20px;
+    animation: TBSKEW;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: skewx(20deg);
+}
+
+
+@keyframes TBSKEW{
+    0%{
+        transform: skewX(20deg);
+    }
+    50%{
+        transform: skewX(-20deg);
+    }
+    100%{
+        transform: skewX(20deg);
+    }
+}
+
+.animation3{
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    margin: 20px;
+    animation: circle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: rotate(20deg);
+}
+
+@keyframes circle{
+    0%{
+        transform: rotate(45deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.animation41{
+    width: 100px;
+    height: 100px;
+    background-color:tomato;
+    margin: 20px;
+    animation: horizontal;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: scaleX(1);
+}
+
+@keyframes horizontal{
+    0%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(1.5);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.animation42{
+    width: 100px;
+    height: 100px;
+    background-color:tomato;
+    margin: 20px;
+    animation: vertical;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: scaleY(1);
+}
+
+@keyframes vertical{
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(1.5);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+
+.animation43{
+    width: 100px;
+    height: 100px;
+    background-color:tomato;
+    margin: 20px;
+    animation: bothside;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: rotate(50deg);
+}
+
+@keyframes bothside{
+    0%{
+        transform: rotate(-50deg);
+    }
+    50%{
+        transform: rotate(50deg);
+    }
+    100%{
+        transform: rotate(-50deg);
+    }
+}
+
+.hovers1{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    margin: 10px auto;
+    transition: 1s;
+    transition-timing-function: ease-in;
+}
+.hovers1:hover{
+    width: 500px;
+}
+
+.hovers2{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    margin: 10px auto;
+    transition: 2s;    
+    transition-timing-function: ease-in-out;
+}
+
+.hovers2:hover{
+    width: 200px;
+    height: 200px;
+}
+
+.hovers3{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    margin: 10px auto;
+    transition: 2s;    
+    transition-timing-function: ease-in-out;
+}
+
+.hovers3:hover{
+    padding-left: 150px;
+}
+
